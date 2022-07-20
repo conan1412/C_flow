@@ -32,7 +32,8 @@ objs := $(objs:./%=objs/%)
 objs/%.o : ./%.cpp
 	@echo 编译$< 生成$@ 目录是$(dir $@)
 	@mkdir -p $(dir $@)
-	g++ -c $< -o $@
+#	g++ -c $< -o $@
+	g++ -g -c $< -o $@
 
 # $^ = 右边依赖项全部
 # 我们把main放到workspace下面

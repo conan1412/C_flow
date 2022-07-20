@@ -18,7 +18,4 @@ namespace MiniDL {
         virtual void backward(std::vector<Data*>& inputs, 
             const std::vector<Data*>& outputs) = 0;
     };
-    
-
-
 } // namespace MiniDL
