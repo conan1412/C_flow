@@ -7,9 +7,9 @@ namespace MiniDL {
 
     //log shape
     void log_shape(const Shape& shape);
-    
-    //log data
-    void log_data(const Data& data);
+
+    //log mems
+    void log_data(const Data& mems);
 }; // namespace MiniDL
 
 

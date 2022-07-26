@@ -2,8 +2,8 @@
 #include <vector>
 #include <initializer_list>
 
-namespace MiniDL{
-    class Shape{
+namespace MiniDL {
+    class Shape {
     public:
         Shape();
         Shape(const std::initializer_list<int> items);
@@ -13,8 +13,9 @@ namespace MiniDL{
         int get_total() const;
         int get_dims() const;
         int get_dim(const int index) const;
+        void clear();
     private:
-        std::vector<int> data;
+        std::vector<int> mems;
     };
 
 } // namespace MiniDL

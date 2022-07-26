@@ -26,13 +26,13 @@ namespace MiniDL {
         std::cout << ")" << std::endl;
     };
 
-    //log data
-    void log_data(const Data& data) {
+    //log mems
+    void log_data(const Data& mems) {
         //log to console
-        log_shape(data.get_shape());
+        log_shape(mems.get_shape());
         //details
-        std::cout << "data: [";
-        const DataType& details = data.get_data();
+        std::cout << "mems: [";
+        const DataType& details = mems.get_data();
         for (size_t i = 0; i < details.size(); i++) {
             std::cout << details[i] << " ";
         }
