@@ -19,7 +19,7 @@ namespace MiniDL {
         }
 
         //get all weights of op
-        virtual std::vector<Data*> get_all_weights() = 0;
+        virtual std::vector<Data*> get_all_weights() = 0;  //纯虚函数
 
         //get all grads of op
         virtual std::vector<Data*> get_all_grads() = 0;
